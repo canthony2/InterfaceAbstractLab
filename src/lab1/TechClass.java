@@ -20,24 +20,32 @@ public abstract class TechClass {
         return courseName;
     }
 
-    public abstract void setCourseName(String courseName);
+    public void setCourseName(String courseName) {
+        this.courseName = courseName;
+    }
 
     public String getCourseNumber() {
         return courseNumber;
     }
 
-    public abstract void setCourseNumber(String courseNumber);
+    public void setCourseNumber(String courseNumber) {
+        this.courseNumber = courseNumber;
+    }
 
     public double getCredits() {
         return credits;
     }
 
-    public abstract void setCredits(double credits);
+    public void setCredits(double credits) {
+        this.credits = credits;
+    }
 
     public String getPrerequisites() {
         return prerequisites;
     }
 
-    public abstract void setPrerequisites(String prerequisites);
+    public void setPrerequisites(String prerequisites) {
+        this.prerequisites = prerequisites;
+    }
 
 }

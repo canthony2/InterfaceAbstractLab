@@ -32,14 +32,7 @@ public class IntroToProgrammingCourse extends TechClass{
     }
     
     @Override
-    public void setCourseName(String CourseName) {
-        if(courseName == null || courseName.length() == 0) {
-            JOptionPane.showMessageDialog(null,
-                    "Error: courseName cannot be null of empty string");
-            System.exit(0);
-        }
-        this.courseName = courseName;
-    }
+    public void setCourseName(String CourseName);
     
     @Override
     public void setCourseNumber(String courseNumber) {
