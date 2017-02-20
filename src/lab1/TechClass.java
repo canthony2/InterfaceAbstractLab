@@ -9,7 +9,7 @@ package lab1;
  *
  * @author canthony2
  */
-public abstract class TechClass {
+public class TechClass {
     
     private String courseName;
     private String courseNumber;
