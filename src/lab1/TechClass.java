@@ -22,7 +22,7 @@ public class TechClass {
 
     public void setCourseName(String courseName) {
         if(courseName == null || courseName.length() == 0) {
-            
+            return;
         }
         this.courseName = courseName;
     }
@@ -33,7 +33,7 @@ public class TechClass {
 
     public void setCourseNumber(String courseNumber) {
         if(courseNumber == null || courseNumber.length() == 0) {
-            
+            return;
         }
         this.courseNumber = courseNumber;
     }
@@ -52,7 +52,7 @@ public class TechClass {
 
     public void setPrerequisites(String prerequisites) {
         if(prerequisites == null || prerequisites.length() == 0) {
-            
+            return;
         }
         this.prerequisites = prerequisites;
     }
