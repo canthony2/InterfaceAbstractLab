@@ -10,11 +10,21 @@ import javax.swing.JOptionPane;
  */
 public class IntroJavaCourse extends TechClass{
     
-    public IntroJavaCourse(String courseName, String courseNumber, double credits, String prerequisites) {
-        this.setCourseName(courseName);
-        this.setCourseNumber(courseNumber);
-        this.setCredits(credits);
-        this.setPrerequisites(prerequisites);
+    private String prerequisites;
+    
+    public IntroJavaCourse() {
+        
     }
 
+    public String getPrerequisites() {
+        return prerequisites;
+    }
+
+    public final void setPrerequisites(String prerequisites) {
+        if(prerequisites == null || prerequisites.length() == 0) {
+            throw new IllegalArgumentException("please enter valid prerequisite");
+        }
+        this.prerequisites = prerequisites;
+    }
+    
 }

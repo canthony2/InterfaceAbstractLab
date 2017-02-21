@@ -14,7 +14,6 @@ public abstract class TechClass {
     private String courseName;
     private String courseNumber;
     private double credits;
-    private String prerequisites;
 
     public String getCourseName() {
         return courseName;
@@ -44,17 +43,6 @@ public abstract class TechClass {
 
     public void setCredits(double credits) {
         this.credits = credits;
-    }
-
-    public String getPrerequisites() {
-        return prerequisites;
-    }
-
-    public void setPrerequisites(String prerequisites) {
-        if(prerequisites == null || prerequisites.length() == 0) {
-            return;
-        }
-        this.prerequisites = prerequisites;
     }
 
 }

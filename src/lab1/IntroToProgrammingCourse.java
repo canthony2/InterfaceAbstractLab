@@ -1,6 +1,5 @@
 package lab1;
 
-import javax.swing.JOptionPane;
 
 /**
  * Describe responsibilities here. NOTE: this class has NO PREREQUISITES!
@@ -11,10 +10,8 @@ import javax.swing.JOptionPane;
  */
 public class IntroToProgrammingCourse extends TechClass{
     
-    public IntroToProgrammingCourse(String courseName, String courseNumber, double credits) {
-        this.setCourseName(courseName);
-        this.setCourseNumber(courseNumber);
-        this.setCredits(credits);
+    public IntroToProgrammingCourse() {
+        
     }
 
 }
