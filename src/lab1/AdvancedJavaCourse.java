@@ -12,8 +12,9 @@ public class AdvancedJavaCourse extends TechClass{
     
     private String prerequisites;
     
-    public AdvancedJavaCourse() {
-        
+    public AdvancedJavaCourse(String courseName, String courseNumber) {
+        setCourseName(courseName);
+        setCourseNumber(courseNumber);
     }
     
     public String getPrerequisites() {

@@ -12,8 +12,9 @@ public class IntroJavaCourse extends TechClass{
     
     private String prerequisites;
     
-    public IntroJavaCourse() {
-        
+    public IntroJavaCourse(String courseName, String courseNumber) {
+        setCourseName(courseName);
+        setCourseNumber(courseNumber);
     }
 
     public String getPrerequisites() {

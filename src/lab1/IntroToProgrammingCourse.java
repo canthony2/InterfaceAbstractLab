@@ -10,8 +10,9 @@ package lab1;
  */
 public class IntroToProgrammingCourse extends TechClass{
     
-    public IntroToProgrammingCourse() {
-        
+    public IntroToProgrammingCourse(String courseName, String courseNumber) {
+        setCourseName(courseName);
+        setCourseNumber(courseNumber);
     }
 
 }
