@@ -15,33 +15,33 @@ public abstract class TechClass {
     private String courseNumber;
     private double credits;
 
-    public String getCourseName() {
+    public final String getCourseName() {
         return courseName;
     }
 
-    public void setCourseName(String courseName) {
+    public final void setCourseName(String courseName) {
         if(courseName == null || courseName.length() == 0) {
             throw new IllegalArgumentException("please enter valid Course Name");
         }
         this.courseName = courseName;
     }
 
-    public String getCourseNumber() {
+    public final String getCourseNumber() {
         return courseNumber;
     }
 
-    public void setCourseNumber(String courseNumber) {
+    public final void setCourseNumber(String courseNumber) {
         if(courseNumber == null || courseNumber.length() < 0 || courseNumber.length() > 7) {
             throw new IllegalArgumentException("please enter valid Course Number in XXX-XXX format");
         }
         this.courseNumber = courseNumber;
     }
 
-    public double getCredits() {
+    public final double getCredits() {
         return credits;
     }
 
-    public void setCredits(double credits) {
+    public final void setCredits(double credits) {
         if(credits < 0 || credits > 4) {
             throw new IllegalArgumentException("please enter valid credit amount");
         }
