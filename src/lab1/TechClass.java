@@ -21,7 +21,7 @@ public abstract class TechClass {
 
     public void setCourseName(String courseName) {
         if(courseName == null || courseName.length() == 0) {
-            return;
+            throw new IllegalArgumentException("please enter valid Course Name");
         }
         this.courseName = courseName;
     }
@@ -31,8 +31,8 @@ public abstract class TechClass {
     }
 
     public void setCourseNumber(String courseNumber) {
-        if(courseNumber == null || courseNumber.length() == 0) {
-            return;
+        if(courseNumber == null || courseNumber.length() < 0 || courseNumber.length() > 7) {
+            throw new IllegalArgumentException("please enter valid Course Number in XXX-XXX format");
         }
         this.courseNumber = courseNumber;
     }
@@ -42,6 +42,9 @@ public abstract class TechClass {
     }
 
     public void setCredits(double credits) {
+        if(credits < 0 || credits > 4) {
+            throw new IllegalArgumentException("please enter valid credit amount");
+        }
         this.credits = credits;
     }
 
